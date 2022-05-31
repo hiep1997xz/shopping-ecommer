@@ -4,7 +4,7 @@ import './App.css'
 import Footer from './common/footer/Footer'
 import Header from './common/header/Header'
 import Data from './components/Data'
-import Sdata from './components/MainPage/Sdata'
+import Sdata from './components/shops/Sdata'
 import Pages from './pages/Pages'
 
 function App() {
