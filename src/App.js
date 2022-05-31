@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
+import Cart from './common/cart/Cart'
 import Footer from './common/footer/Footer'
 import Header from './common/header/Header'
 import Data from './components/Data'
@@ -39,7 +40,7 @@ function App() {
       setCartItem(
         CartItem.map((item) =>
           item.id === product.id
-            ? { ...productExist, qyt: productExist.qty + 1 }
+            ? { ...productExist, qty: productExist.qty + 1 }
             : item
         )
       )
@@ -78,10 +79,21 @@ function App() {
   return (
     <>
       <Router>
-        <Header CartItem={CartItem}/>
+        <Header CartItem={CartItem} />
         <Switch>
           <Route path="/" exact>
-            <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems}/>
+            <Pages
+              productItems={productItems}
+              addToCart={addToCart}
+              shopItems={shopItems}
+            />
+          </Route>
+          <Route path="/cart" exact>
+            <Cart
+              CartItem={CartItem}
+              addToCart={addToCart}
+              decreaseQty={decreaseQty}
+            />
           </Route>
         </Switch>
         <Footer />
