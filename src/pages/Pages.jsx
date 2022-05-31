@@ -6,6 +6,7 @@ import NewArrivals from '../components/newArrivals/NewArrivals'
 import Shop from '../components/shops/Shop'
 import Discounts from '../components/discounts/Discounts'
 import Annocument from "../components/annocument/Annocument"
+import Wrapper from '../components/wrapper/Wrapper'
 
 
 const Pages = ({productItems, addToCart, shopItems, CartItem}) => {
@@ -18,6 +19,7 @@ const Pages = ({productItems, addToCart, shopItems, CartItem}) => {
       <Discounts />
       <Shop shopItems={shopItems} addToCart={addToCart}/>
       <Annocument />
+      <Wrapper />
     </>
   )
 }
