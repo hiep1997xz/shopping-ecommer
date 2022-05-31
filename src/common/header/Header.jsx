@@ -4,11 +4,11 @@ import Navbar from './Navbar'
 import Search from './Search'
 import "./Head.css"
 
-const Header = () => {
+const Header = ({CartItem}) => {
   return (
     <div>
       <Head />
-      <Search />
+      <Search CartItem={CartItem}/>
       <Navbar />
     </div>
   )

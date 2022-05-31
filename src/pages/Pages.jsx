@@ -3,10 +3,10 @@ import Home from '../components/MainPage/Home'
 import FlashDeals from "../components/flashDeals/FlashDeals"
 
 
-const Pages = ({productItems, addToCart, shopItems}) => {
+const Pages = ({productItems, addToCart, shopItems, CartItem}) => {
   return (
     <>
-      <Home />
+      <Home CartItem={CartItem}/>
       <FlashDeals productItems={productItems} addToCart={addToCart} />
     </>
   )
