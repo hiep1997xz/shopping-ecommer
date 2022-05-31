@@ -5,6 +5,7 @@ import TopCate from '../components/TopCategories/TopCate'
 import NewArrivals from '../components/newArrivals/NewArrivals'
 import Shop from '../components/shops/Shop'
 import Discounts from '../components/discounts/Discounts'
+import Annocument from "../components/annocument/Annocument"
 
 
 const Pages = ({productItems, addToCart, shopItems, CartItem}) => {
@@ -16,6 +17,7 @@ const Pages = ({productItems, addToCart, shopItems, CartItem}) => {
       <NewArrivals />
       <Discounts />
       <Shop shopItems={shopItems} addToCart={addToCart}/>
+      <Annocument />
     </>
   )
 }
