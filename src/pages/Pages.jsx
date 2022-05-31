@@ -4,6 +4,7 @@ import FlashDeals from "../components/flashDeals/FlashDeals"
 import TopCate from '../components/TopCategories/TopCate'
 import NewArrivals from '../components/newArrivals/NewArrivals'
 import Shop from '../components/shops/Shop'
+import Discounts from '../components/discounts/Discounts'
 
 
 const Pages = ({productItems, addToCart, shopItems, CartItem}) => {
@@ -13,6 +14,7 @@ const Pages = ({productItems, addToCart, shopItems, CartItem}) => {
       <FlashDeals productItems={productItems} addToCart={addToCart} />
       <TopCate />
       <NewArrivals />
+      <Discounts />
       <Shop shopItems={shopItems} addToCart={addToCart}/>
     </>
   )
